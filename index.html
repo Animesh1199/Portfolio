@@ -1,45 +1,109 @@
-<!--
-  Hit RUN to see this project in action!
-  
-  This project will auto-refresh as you edit the HTML, CSS and JS. See README.md for more info (including how to disable auto-refresh and install packages).
--->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Replit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animesh - Portfolio</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="nav-title">Animesh</h1>
+      <ul class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <main>
-    <h1 class="title">Welcome to HTML on Replit!</h1>
-    <p class="description">Get started by editing
-      <code class="code">index.html</code>. The webview will auto-refresh as you edit! (See <code
-        class="code">README.md</code> if you want to
-      disable auto-refresh.)
-    </p>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">Hi, I'm Animesh</h1>
+          <p class="hero-subtitle">Professional Developer & Problem Solver</p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+            <a href="attached_assets/Animesh cv _1755050055563.pdf" class="btn btn-secondary" target="_blank">View Resume</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="attached_assets/FIM09108_1755050078299.jpg" alt="Animesh Professional Photo" class="profile-photo">
+        </div>
+      </div>
+    </section>
 
-    <section class="grid">
-      <a href="https://replit.com/learn" class='card'>
-        <h2>Learn &rarr;</h2>
-        <p>Find tutorials on Replit to learn more.</p>
-      </a>
-
-      <a href="https://docs.replit.com/category/deployments" class='card'>
-        <h2>Deploy &rarr;</h2>
-        <p>
-          After you are happy with this app, deploy it on Replit!
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-text">
+          I'm a passionate developer with expertise in modern web technologies and software development. 
+          I enjoy creating innovative solutions and working on challenging projects that make a real impact.
         </p>
-      </a>
+      </div>
+    </section>
+
+    <section id="experience" class="section bg-light">
+      <div class="container">
+        <h2 class="section-title">Experience & Projects</h2>
+        <div class="experience-grid">
+          <div class="experience-card">
+            <h3>Web Development</h3>
+            <p>Building responsive and interactive web applications using modern frameworks and technologies.</p>
+          </div>
+          <div class="experience-card">
+            <h3>Software Engineering</h3>
+            <p>Developing scalable software solutions with clean, maintainable code and best practices.</p>
+          </div>
+          <div class="experience-card">
+            <h3>Problem Solving</h3>
+            <p>Analyzing complex problems and implementing efficient, creative solutions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="skills-grid">
+          <div class="skill-item">Frontend Development</div>
+          <div class="skill-item">Backend Development</div>
+          <div class="skill-item">Database Management</div>
+          <div class="skill-item">API Development</div>
+          <div class="skill-item">Version Control</div>
+          <div class="skill-item">Agile Methodologies</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section bg-light">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-text">
+          I'm always interested in new opportunities and collaborations. Let's connect!
+        </p>
+        <div class="contact-buttons">
+          <a href="mailto:contact@animesh.dev" class="btn btn-primary">Email Me</a>
+          <a href="attached_assets/Animesh cv _1755050055563.pdf" class="btn btn-secondary" target="_blank">Download Resume</a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <script type="module" src="script.js"></script>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Animesh. All rights reserved.</p>
+    </div>
+  </footer>
 
+  <script type="module" src="script.js"></script>
 </body>
 
 </html>
